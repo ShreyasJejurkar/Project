@@ -23,11 +23,25 @@ $/
   {solution}.sln
 ```
 
-### Install as CLI tool
+This folder is considered as [standard folder structure](https://gist.github.com/davidfowl/ed7564297c61fe9ab814) for .NET project in the ecosystem, which is being used for many of the .NET foundation project.
 
+
+### How to use
+
+1. Install CLI tool by running following command. (ignore if already installed)
 ```
 dotnet tool install --global dotnet-new-project
 ```
 
+2. Create a folder for your project and navigate into it. 
+```
+mkdir AwesomeProject && cd AwesomeProject
+```
+3. Run `dotnet-new-project` to create folder structure. 
 
-This folder is considered as [standard folder structure](https://gist.github.com/davidfowl/ed7564297c61fe9ab814) for .NET project in the ecosystem, which is being used for many of the .NET foundation project.
+![image](https://user-images.githubusercontent.com/17148381/116717234-4c2d0580-a9f6-11eb-8bb2-1703991837ee.png)
+
+
+
+
+
