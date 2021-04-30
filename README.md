@@ -39,7 +39,8 @@ mkdir AwesomeProject && cd AwesomeProject
 ```
 3. Run `dotnet-new-project` to create folder structure. 
 
-![image](https://user-images.githubusercontent.com/17148381/116717234-4c2d0580-a9f6-11eb-8bb2-1703991837ee.png)
+![image](https://user-images.githubusercontent.com/17148381/116717555-a201ad80-a9f6-11eb-8602-f7e192903fad.png)
+
 
 
 
