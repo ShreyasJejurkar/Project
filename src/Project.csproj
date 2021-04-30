@@ -15,6 +15,8 @@
 		<Authors>Shreyas Jejurkar</Authors>
 		<Description>A dontnet cli tool to create initial project structure</Description>
 		<PackageTags>dotnet, cli,</PackageTags>
+		<Copyright>Shreyas Jejurkar 2021</Copyright>
+		<PackageReleaseNotes>Initial release</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
