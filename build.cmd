@@ -1,1 +1,1 @@
-dotnet build Project
+dotnet build
