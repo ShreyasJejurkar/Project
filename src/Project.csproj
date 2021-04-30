@@ -20,4 +20,8 @@
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 	  <Optimize>true</Optimize>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="System.CommandLine" Version="2.0.0-beta1.21216.1" />
+	</ItemGroup>
 </Project>
