@@ -1,5 +1,7 @@
 ## dotnet-new-project
 
+[![.NET](https://github.com/MCCshreyas/Project/actions/workflows/dotnet.yml/badge.svg)](https://github.com/MCCshreyas/Project/actions/workflows/dotnet.yml)
+
 A dotnet CLI tool which will create following .NET project structure in folder.
 
 ```
