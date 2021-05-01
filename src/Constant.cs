@@ -41,7 +41,19 @@ artifacts/
   </packageSources>
 </configuration>
 ";
+
+        private static readonly string _directoryBuildPropsContent = @"
+<Project>
+	<PropertyGroup>
+		<BaseIntermediateOutputPath>$(SolutionDir)\artifacts\$(MSBuildProjectName)\$(Configuration)</BaseIntermediateOutputPath>
+		<BaseOutputPath>$(SolutionDir)\artifacts\$(MSBuildProjectName)\$(Configuration)</BaseOutputPath>
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
+</Project>
+";
+
         #endregion
+
 
         private static readonly string _buildCmdContent = @$"dotnet build";
 
@@ -50,5 +62,6 @@ artifacts/
         public static readonly byte[] GitIgnoreFileContentInBytes = Encoding.UTF8.GetBytes(_gitignoreContent);
         public static readonly byte[] BuildCmdContentInBytes = Encoding.UTF8.GetBytes(_buildCmdContent);
         public static readonly byte[] NugetConfigContentInBytes = Encoding.UTF8.GetBytes(_nugetConfigContent);
+        public static readonly byte[] DirectoryBuildPropsContentInBytes = Encoding.UTF8.GetBytes(_directoryBuildPropsContent);
     }
 }

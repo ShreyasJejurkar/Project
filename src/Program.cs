@@ -20,6 +20,7 @@ namespace Project
             await CreateFile("LICENSE");
             await CreateFile("NuGet.Config", content: Constant.NugetConfigContentInBytes);
             await CreateFile("README.md");
+            await CreateFile("Directory.Build.props", content: Constant.DirectoryBuildPropsContentInBytes);
             CreateFolder("src");
             CreateFolder("artifacts");
             CreateFolder("build");
