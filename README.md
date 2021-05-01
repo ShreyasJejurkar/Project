@@ -18,6 +18,7 @@ $/
   build.cmd
   build.sh
   LICENSE
+  Directory.Build.props
   NuGet.Config
   README.md
   {solution}.sln
