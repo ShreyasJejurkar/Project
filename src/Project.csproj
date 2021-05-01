@@ -16,7 +16,10 @@
 		<Description>A dontnet cli tool to create initial project structure</Description>
 		<PackageTags>dotnet, cli,</PackageTags>
 		<Copyright>Shreyas Jejurkar 2021</Copyright>
-		<PackageReleaseNotes>Initial release</PackageReleaseNotes>
+		<PackageReleaseNotes>Minor bug fixes
+Fixed a bug related to guid in solution file.
+Added Directory.Build.props to remapped bin/obj folder outiside of src inside artifacts</PackageReleaseNotes>
+		<Version>1.0.1</Version>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
