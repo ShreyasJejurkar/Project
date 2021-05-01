@@ -6,7 +6,7 @@ namespace Project
 {
     public class Program
     {
-        public static async Task Main(string[] args)
+        public static async Task Main()
         {
             Console.WriteLine("Initializing new project...");
             string fullPath = Path.GetFullPath(Directory.GetCurrentDirectory()).TrimEnd(Path.DirectorySeparatorChar);
@@ -33,7 +33,7 @@ namespace Project
             Console.WriteLine($"Project structure has been created. Click on {projectName}.sln to open solution.");
         }
 
-        private static async Task CreateFile(string fileName, byte[] content = null)
+        private static async Task CreateFile(string fileName, byte[]? content = null)
         {
             using FileStream fs = File.Create(Path.Combine(Constant.DirectoryPath, fileName));
 

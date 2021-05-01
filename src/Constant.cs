@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Text;
 
 namespace Project
@@ -7,7 +8,8 @@ namespace Project
     {
         #region Private fields
 
-        private static readonly string _solutionFileContent = @"Microsoft Visual Studio Solution File, Format Version 12.00
+        private static readonly string _solutionFileContent = $@"
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31220.234
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -16,7 +18,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {346B8E55-4F98-411A-B190-929B790EC1AA}
+		SolutionGuid = {Guid.NewGuid()}
 	EndGlobalSection
 EndGlobal";
 
@@ -53,7 +55,6 @@ artifacts/
 ";
 
         #endregion
-
 
         private static readonly string _buildCmdContent = @$"dotnet build";
 
